@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/bank/index",
+    "pages/diary/index",
+    "pages/user/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/bank/index",
+        "iconPath": "image/bank_normal.png",
+        "selectedIconPath": "image/bank_active.png",
+        "text": "梦想储蓄罐"
+      },
+      {
+        "pagePath": "pages/diary/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "成功日记"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

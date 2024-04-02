@@ -1,0 +1,2 @@
+<!--pages/bank/components/dreamCard.wxml-->
+<text>{{dreamName}}</text>

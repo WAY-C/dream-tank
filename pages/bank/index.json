@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-row": "tdesign-miniprogram/row/row",
+    "t-col": "tdesign-miniprogram/col/col",
+    "dream-card": "components/dreamCard"
+  }
+}
