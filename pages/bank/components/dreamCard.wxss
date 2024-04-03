@@ -1,1 +1,4 @@
 /* pages/bank/components/dreamCard.wxss */
+.dreamCard {
+    width: 100%
+}
