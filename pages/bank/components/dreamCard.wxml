@@ -1,16 +1,15 @@
 <!--pages/bank/components/dreamCard.wxml-->
-<scroll-view class="dreamCard" scroll-y type="list">
+<view class="dreamCard">
     <view class="topSection">
         <view class="completionStatusCard">
             <t-tag theme="{{completionTheme}}">{{completionStatus}}</t-tag>
         </view>
         <view class="dreamNameAndSavings">
-            <view class="dreamName">{{dreamName}}</view>
-            <view class="balance">{{savings}}</view>
+            <text class="dreamName">{{dreamName}}</text>
+            <text class="target">🎯{{target}}元</text>
         </view>
     </view>
     <view class="imgAlbumSection">
-        <!-- 轮播图 -->
         <t-swiper
             current="{{1}}"
             autoplay="{{autoplay}}"
@@ -24,11 +23,11 @@
         </t-swiper>
     </view>
     <view class="progress">
+        <text class="progress-text">💰{{savings}}/{{target}}</text>
         <t-progress theme="plump" percentage="{{progressPercentage}}" status="{{progressStatus}}"/>
-        <p>{{savings}}/{{target}}</p>
     </view>
     <view class="footerSection">
-        <t-button theme="primary" variant="outline">修改</t-button>
-        <t-button theme="danger">删除</t-button>
+        <t-button icon="setting-1" size="extra-small" theme="primary" variant="outline" content="修改"></t-button>
+        <t-button hover-start-time="3" icon="delete-1" size="extra-small" theme="danger" content="删除"></t-button>
     </view>
-</scroll-view>
+</view>

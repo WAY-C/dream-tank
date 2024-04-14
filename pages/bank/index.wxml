@@ -1,13 +1,26 @@
 <!--index.wxml-->
 <scroll-view class="scrollarea" scroll-y type="list">
     <!-- <view>这里放“梦想储蓄罐”</view> -->
-    <t-row gutter="16">
-      <t-col span="8" t-class="light">新增一个梦想</t-col>
-      <t-col wx:for="{{dreamList}}" wx:key="index" span="8" t-class="{{index/2 === 0 ? \"dark\" : \"light\"}}">
-      <dream-card
-        dreamName="{{item.dreamName}}"
-      >
-      </dream-card>
+    <t-row gutter="12">
+      <t-col span="12" t-class="light">
+        <view style="height:100%; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+          <view style="height:60%; width: 80%; background-color: #2e59a7; display:flex; flex-direction:column;justify-content:center;">
+            <t-icon
+              name="add-circle"
+              size="5rem"
+            />
+            <text>添加一个梦想</text>
+          </view>
+        </view>
+      </t-col>
+      <t-col wx:for="{{dreamList}}" wx:key="index" span="12" t-class="{{index/2 === 0 ? 'dark' : 'light'}}">
+        <dream-card
+          dreamName="{{item.dreamName}}"
+          savings="{{item.savings}}"
+          target="{{item.target}}"
+          swiperList="{{item.swiperList}}"
+        >
+        </dream-card>
       </t-col>
     </t-row>
     <t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">

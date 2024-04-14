@@ -3,11 +3,12 @@
   text-align: center;
 }
 .dark {
-  background-color: #0052d9;
+  background-color: #d4e5ef;
+  
 }
 
 .light {
-  background-color: #366ef4;
+  background-color: #d4e5ef;
 }
 
 .dark,

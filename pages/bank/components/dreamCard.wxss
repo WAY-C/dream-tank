@@ -1,4 +1,70 @@
-/* pages/bank/components/dreamCard.wxss */
 .dreamCard {
-    width: 100%
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.dreamCard .topSection {
+  flex: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dreamCard .topSection .completionStatusCard {
+  flex: 0;
+  line-height: 1rem;
+}
+
+.dreamCard .topSection .dreamNameAndSavings {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dreamCard .topSection .dreamNameAndSavings .dreamName {
+  width: 87%;
+  border-radius: 0.5rem;
+  line-height: 1rem;
+  margin-top: 3px;
+  padding: 3px 7px 3px 7px;
+  font-size: large;
+  font-weight: bold;
+  background-color: #2e59a7;
+}
+
+.dreamCard .topSection .dreamNameAndSavings .target {
+  width: 80%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  line-height: 1rem;
+  font-weight: bold;
+  background-color: #5976ba;
+  color: burlywood;
+  padding: 1px 3px 1px 3px;
+}
+
+.dreamCard .progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dreamCard .progress .progress-text {
+  line-height: 1rem;
+  color: #2e59a7;
+  margin-bottom: 5px;
+}
+
+.dreamCard .footerSection {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
 }

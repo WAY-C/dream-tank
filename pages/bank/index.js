@@ -4,26 +4,30 @@ Component({
       {
         "dreamName": "第一个梦想",
         "savings": 0.05,
+        "target": 1,
         "isCompleted": false,
-        "pictures": ["images/dreams/1.png"]
+        "swiperList": ["../../image/bank_active.png"]
       },
       {
         "dreamName": "第二个梦想",
         "savings": 100,
+        "target": 260,
         "isCompleted": false,
-        "pictures": ["images/dreams/1.png"]
+        "swiperList": ["../../image/bank_active.png"]
       },
       {
         "dreamName": "第三个梦想",
         "savings": 10000,
+        "target": 20000,
         "isCompleted": false,
-        "pictures": ["images/dreams/1.png"]
+        "swiperList": ["../../image/bank_active.png"]
       },
       {
         "dreamName": "第四个梦想",
         "savings": 100000,
-        "isCompleted": false,
-        "pictures": ["images/dreams/1.png"]
+        "target": 100000,
+        "isCompleted": true,
+        "swiperList": ["../../image/bank_active.png"]
       }
     ]
   },

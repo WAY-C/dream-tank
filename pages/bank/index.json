@@ -3,6 +3,7 @@
   "usingComponents": {
     "t-row": "tdesign-miniprogram/row/row",
     "t-col": "tdesign-miniprogram/col/col",
-    "dream-card": "components/dreamCard"
+    "dream-card": "components/dreamCard",
+    "t-icon": "tdesign-miniprogram/icon/icon"
   }
 }
